@@ -1,0 +1,81 @@
+#header{
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffcf7b;
+}
+#headerTop{
+    width: 100%;
+    height: 45px;
+}
+#headerTopLeft{
+    width: 75%;
+    height: 45px;
+    float: left;
+}
+#MTitle{
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    height: 45px;
+}
+#headerTopRight{
+    width: 150px;
+    height: 45px;
+    float: right;
+}
+#Maintenance{
+    background-color: #a6afff;
+    width: 150px;
+    height: 45px;
+    float: right;
+}
+#headerBottom{
+    width: 100%;
+    height: 50px;
+}
+.headerLinkDiv{
+    width: 140px;
+    height: 50px;
+    background-color: #ffc5ac;
+    float: left;
+    margin-left: 10px;
+}
+.headerLinkDivActive{
+    width: 140px;
+    height: 50px;
+    background-color: #ff8870;
+    float: left;
+    margin-left: 10px;
+}
+.headerLinkP{
+    margin-left: 5px;
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height: 1000px;
+    background-color: blue;
+}
+#blank{
+    height: 100px;
+    width: 100%;
+}
+#createUser{
+    height: 150px;
+    width: 400px;
+}
+.createUserLB{
+    float: left;
+}
+.createUserIP{
+    float: right;
+}
+.breakerForm{
+    height: 20px;
+    width: 400px;
+}
+label{
+    color: white;
+}

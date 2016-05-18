@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Subscription Service Project</title>
+    <script type="text/javascript" src="titleCenter.js"></script>
+</head>
+<body style="margin: 0;" id="body" onload="reCenter()" onresize="reCenter()">
+<!-- the header div -->
+<div id="header">
+    <!-- the start of the top portion of the header -->
+    <div id="headerTop">
+        <div id="headerTopLeft">
+            <div id="MTitle">
+                <h2 style="text-align: center; margin: 0;">The People's Market</h2>
+                <h6 style="text-align: center; margin: 0;">The convenient marketplace for the people!</h6>
+            </div>
+        </div>
+        <div id="headerTopRight">
+            <div id="Maintenance">
+                <a href=""><p style="text-decoration: none; margin: 0;">Maintenance Page:<br />Admins Only!</p></a>
+            </div>
+        </div>
+    </div>
+    <!-- the end of the top portion of the header -->
+    <!-- the start of the bottom portion of the header where the links are to the rest of the pages -->
+    <div id="headerBottom">
+        <a href="index.html"><div class="headerLinkDiv"><p class="headerLinkP">Home</p></div></a>
+        <div class="headerLinkDivActive"><p class="headerLinkP">Sign Up</p></div>
+        <a href=""><div class="headerLinkDiv"><p class="headerLinkP">Email Options</p></div></a>
+        <a href=""><div class="headerLinkDiv"><p class="headerLinkP">Find a Store</p></div></a>
+    </div>
+    <!-- the end of the bottom portion the header -->
+</div>
+<!-- end of the header and start of the main home page -->
+<div id="main">
+    <div id="blank"> <!-- this div left blank on purpose --> </div>
+    <div id="createUser">
+        <form enctype="multipart/form-data" method="post" style="height: 150px; width: 400px;"> <!-- action="<?php echo $_SERVER['PHP_SELF']; ?>" -->
+            <div class="breakerForm">
+                <label class="createUserLB" for="first_name">First Name:</label>
+                <input class="createUserIP" type="text" id="first_name" name="first_name" /> <!-- value="<?php if (!empty($first_name)) echo $first_name; ?>" -->
+            </div>
+            <div class="breakerForm">
+                <label class="createUserLB" for="last_name">Last Name:</label>
+                <input class="createUserIP" type="text" id="last_name" name="last_name" /><br /> <!-- value="<?php if (!empty($last_name)) echo $last_name; ?>" -->
+            </div>
+            <div class="breakerForm">
+                <label class="createUserLB" for="email">Email:</label>
+                <input class="createUserIP" type="text" id="email" name="email" /><br /> <!-- value="<?php if (!empty($email)) echo $email; ?>" -->
+            </div>
+            <div class="breakerForm">
+                <label class="createUserLB" for="location">Location:</label>
+                <input class="createUserIP" list="possibleLocations" id="location" name="location" /><br /> <!-- value="<?php if (!empty($location)) echo $location; ?>" -->
+                <datalist id="possibleLocations">
+                    <option value="Phoenix"></option>
+                    <option value="Glendale"></option>
+                    <option value="Peoria"></option>
+                    <option value="Flagstaff"></option>
+                    <option value="Scottsdale"></option>
+                    <option value="Chandler"></option>
+                    <option value="Sun City"></option>
+                </datalist>
+            </div>
+            <div class="breakerForm">
+                <label class="createUserLB" for="password">Password:</label>
+                <input class="createUserIP" type="text" id="password" name="password" /> <!-- value="<?php if (!empty($password)) echo $password; ?>" -->
+            </div>
+            <div class="breakerForm">
+                <input type="submit" id="submit" name="submit" value="Create Account">
+            </div>
+        </form>
+    </div>
+
+
+</div>
+</body>
+</html>
+
+
